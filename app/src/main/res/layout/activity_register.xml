@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/maroon"
+    tools:context=".Register">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_reg"
+        android:textColor="#B7C52D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Create New Account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/password1"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:ems="15">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="confirm password"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/password2"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:ems="15">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:backgroundTint="#006400"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txtGotologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already Registered?Login here"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

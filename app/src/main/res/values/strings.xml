@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ar app</string>
+
+    <string name="user_reg">USER REGISTRATION</string>
+    <string name="user_log">USER LOGIN</string>
+</resources>
